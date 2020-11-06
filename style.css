@@ -1,0 +1,253 @@
+
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    background-color:#eee;
+    font-family: 'Lato', sans-serif;
+    
+}
+#header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    height: 80px;
+    
+}
+#logo{
+    width: 120px;
+    
+}
+.logo{
+    margin-right: auto;
+    flex: 1;
+}
+#navigation-bar{
+    flex: 1;
+}
+.list-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+}
+@media (max-width: 600px){
+    .list-container{
+        flex-wrap: wrap;
+        
+    }
+    .list-container > li {
+        flex: 1 1 100%;
+        margin: 0 auto;
+        margin-top: -1rem;
+    }
+
+   
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #adc006d3;
+    transition: 0.5s;
+    background-color:rgba(238, 238, 238, 0);
+}
+#hero{
+    text-align: center;
+    margin-top: 150px;
+}
+#email{
+    width: 50%;
+    margin: 1rem;
+    height: 2rem;
+    padding: 1rem;
+}
+#submit{
+    display: block;
+    margin:0 auto;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background-color:rgb(228, 228, 13) ;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:rgba(230, 227, 227, 0.719);
+    color: rgba(167, 167, 8, 0.911);
+    transition: 0.5s;
+}
+@media all and (max-width: 600px){
+    #submit{
+        display: block;
+        margin:0 auto;
+        padding: 0 10px;
+        height: 20px;
+        font-size: 0.5em;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: 3px black solid;
+        border-radius: 2px;
+        background-color:rgb(228, 228, 13) ;
+        cursor: pointer;
+    }
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#features{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.grid{
+    display: flex;
+    margin:2rem;
+    justify-content: space-around;
+}
+.icon{
+    flex:1;
+}
+
+.desc{
+    flex: 5;
+}
+.icon-img{
+    width: 50px;
+}
+@media all and (max-width: 600px){
+    .grid > .icon {
+        display: none;
+    }
+}
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#video{
+    
+    width: 80%;
+}
+@media all and (max-width: 600px){
+    #video{
+        width: 70%;
+        
+    }
+}
+#pricing{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem; 
+      
+}
+.product{
+    border: 2px solid black;
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    
+
+}
+
+.product > .level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    height: 50px;
+    
+}
+ul{
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    width: 40%;
+    height: 30px;
+}
+ul{
+    flex: 3;
+}
+.button:hover{
+    background-color:#d4ab03 ;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    #pricing{
+        flex-wrap: wrap;
+    }
+    .product{
+        flex: 1 1 100%;
+        margin: 1rem;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  footer > ul > li > a{
+      color:#444;
+  }
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    
+  }
+  
